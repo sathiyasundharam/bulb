@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <style>
+      body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGt9A1bq4qyDVF87AgJduaTLHsktaD7I0hGw&s");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style> 
+  <center>
+<img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+</center>
+<h1 style="color: black;"> About Bulb</h1>
+<h2>
+<p style="color: rgb(241, 13, 13);">*Amazon.in: Buy Light Bulbs online at low prices in India. Buy Light Bulbs from popular brands such as Philips, Megaway LED, Havells and more at best prices ..<br>*An incandescent light bulb, incandescent lamp or incandescent light globe is an electric light with a filament that is heated until it glows. <br>The filament is enclosed in a glass bulb that is either evacuated or filled with inert gas to protect the filament from oxidation. Wikipedia.</p>
+</h2>
+
+<script>
+function changeImage() {
+ var image = document.getElementById('myImage');
+ if (image.src.match("bulbon")) {
+   image.src = "pic_bulboff.gif";
+ } else {
+   image.src = "pic_bulbon.gif";
+ }
+}
+
+
+</script>
+</body>
+</html>
+
+
+
